@@ -159,7 +159,7 @@ img {
 }
 .active {
   position: relative;
-  color: #404bbf;
+  color: var(--pressed-color);
 }
 .active::after {
   position: absolute;
