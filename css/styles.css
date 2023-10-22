@@ -603,12 +603,10 @@ img {
   margin-bottom: 16px;
 }
 .modal-form-wrapper {
-  /* display: flex;
-  flex-direction: column;
-  gap: 4px; */
   margin-bottom: 8px;
 }
 .form-label {
+  display: block;
   color: var(--light-slate);
   font-size: 12px;
   font-weight: 400;
@@ -662,6 +660,10 @@ img {
   padding: 8px 16px;
   resize: none;
   min-height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
 }
 .form-label-checkbox {
   display: flex;
