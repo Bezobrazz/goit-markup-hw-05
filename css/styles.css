@@ -465,8 +465,6 @@ img {
 .footer-social-img {
   fill: var(--cloud-color);
 }
-.footer-third-wrapper {
-}
 .footer-form {
   display: flex;
   gap: 24px;
@@ -602,8 +600,13 @@ img {
   margin-bottom: 16px;
 }
 .modal-form {
+  margin-bottom: 16px;
+}
+.modal-form-wrapper {
   display: flex;
   flex-direction: column;
+  gap: 4px;
+  margin-bottom: 8px;
 }
 .form-label {
   color: var(--light-slate);
@@ -611,13 +614,13 @@ img {
   font-weight: 400;
   line-height: 1.16;
   letter-spacing: 0.04em;
-  margin-bottom: 4px;
 }
 .form-input {
-  margin-bottom: 8px;
-  padding: 8px 16px;
+  width: 100%;
+  padding: 8px 38px;
   border-radius: 4px;
   border: 1px solid var(--NAVY-BLUE-modal, #2e2f4266);
+  color: #2e2f42;
 }
 .form-input::placeholder {
   color: rgba(46, 47, 66, 0.4);
@@ -625,12 +628,33 @@ img {
   line-height: 1.16;
   letter-spacing: 0.04em;
 }
+.form-input:focus {
+  outline: 1px solid var(--brand-color);
+  border: none;
+}
+.form-input-wrapper {
+  position: relative;
+}
+.form-input-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: currentColor;
+}
+.form-input:focus + .form-input-icon {
+  fill: var(--brand-color);
+}
+.form-comment-wrapper {
+  margin-bottom: 16px;
+}
 .form-label-comment {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
 .form-input-comment {
+  padding: 8px 16px;
   resize: none;
   min-height: 120px;
 }
@@ -639,6 +663,21 @@ img {
   align-items: center;
   gap: 8px;
 }
+.form-base-checkbox {
+  display: none;
+}
+
+.form-checkbox-icon {
+  fill: #ffff;
+}
+
+.modal-form-btn {
+  display: block;
+  margin: 0 auto;
+  width: 169px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
 /* ===================/MODAL=================== */
 
 /*** =================PORTFOLIO=================== ***/

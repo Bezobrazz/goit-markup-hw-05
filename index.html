@@ -520,11 +520,10 @@
           </ul>
         </div>
         <div class="footer-third-wrapper">
-					<p class="footer-form-label">
-						Subscribe
-					</p>
+          <p class="footer-form-label">Subscribe</p>
           <form class="footer-form">
-            <input class="footer-form-input"
+            <input
+              class="footer-form-input"
               type="email"
               id="email"
               name="email"
@@ -533,10 +532,9 @@
             />
             <button class="footer-form-btn" type="submit">
               Subscribe
-            <svg class="footer-form-btn-img" width="24" height="24">
-								<use href="./images/icons.svg#icon-plane">
-									<use>
-							</svg>
+              <svg class="footer-form-btn-img" width="24" height="24">
+                <use href="./images/icons.svg#icon-plane"></use>
+              </svg>
             </button>
           </form>
         </div>
@@ -551,24 +549,67 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-				<p class="modal-form-title">
-					Leave your contacts and we will call you back
-				</p>
-				<form class="modal-form" action="">
-					<label class="form-label" for="name">Name</label>
-					<input class="form-input" type="text" name="Name" id="name">
-					<label class="form-label" for="phone">Phone</label>
-					<input class="form-input" type="tel" name="Phone" id="phone">
-					<label class="form-label" for="email">Email</label>
-					<input class="form-input" type="email" name="Email" id="email">
-					<label class="form-label form-label-comment" name="Comment" for="Comment">Comment
-						<textarea class="form-input-comment form-input" type="text" name="Text input" placeholder="Text input" rows="5" id="comment"></textarea>
-					</label>
-					<label class="form-label form-label-checkbox" for="">
-						<input type="checkbox" name="" id="checkbox">I accept the terms and conditions of the <a href="#">Privacy Policy</a>
-					</label>
-					
-				</form>
+        <p class="modal-form-title">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="modal-form" action="">
+          <div class="modal-form-wrapper">
+            <label class="form-label" for="name">Name</label>
+            <div class="form-input-wrapper">
+              <input class="form-input" type="text" name="name" id="name" />
+              <svg class="form-input-icon" width="18">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-form-wrapper">
+            <label class="form-label" for="phone">Phone</label>
+            <div class="form-input-wrapper">
+              <input class="form-input" type="tel" name="phone" id="phone" />
+              <svg class="form-input-icon" width="18">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-form-wrapper">
+            <label class="form-label" for="email">Email</label>
+            <div class="form-input-wrapper">
+              <input class="form-input" type="email" name="email" id="email" />
+              <svg class="form-input-icon" width="18">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-form-wrapper form-comment-wrapper">
+            <label
+              class="form-label form-label-comment"
+              name="comment"
+              for="comment"
+              >Comment
+              <textarea
+                class="form-input-comment form-input"
+                type="text"
+                name="Text input"
+                placeholder="Text input"
+                rows="5"
+                id="comment"
+              ></textarea>
+            </label>
+          </div>
+          <label class="form-label form-label-checkbox" for="">
+            <svg class="form-checkbox-icon" width="10">
+              <use href="./images/icons.svg#icon-check"></use>
+            </svg>
+            <input
+              class="form-base-checkbox"
+              type="checkbox"
+              name=""
+              id="checkbox"
+            />I accept the terms and conditions of the
+            <a href="#">Privacy Policy</a>
+          </label>
+          <button class="modal-form-btn btn" type="submit">Send</button>
+        </form>
       </div>
     </div>
     <!-- /Modal ------------------->
