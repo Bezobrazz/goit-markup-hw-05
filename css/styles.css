@@ -499,11 +499,12 @@ img {
 }
 .footer-form-btn {
   min-width: 165px;
+  height: 40px;
   display: inline-flex;
   padding: 8px 24px;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  /* gap: 16px; */
   border-radius: 4px;
   background: var(--brand-color);
   cursor: pointer;
@@ -521,6 +522,7 @@ img {
 }
 .footer-form-btn-img {
   fill: #fff;
+  margin-left: 16px;
 }
 /* ===================/FOOTER=================== */
 
