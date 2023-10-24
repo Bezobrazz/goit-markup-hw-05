@@ -603,9 +603,6 @@ img {
   letter-spacing: 0.02em;
   margin-bottom: 16px;
 }
-.modal-form {
-  margin-bottom: 16px;
-}
 .modal-form-wrapper {
   margin-bottom: 8px;
 }
@@ -681,6 +678,7 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  margin-right: 8px;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
